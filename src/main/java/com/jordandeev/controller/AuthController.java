@@ -74,8 +74,6 @@ public class AuthController {
         res.setJwt(jwt);
         
         return new ResponseEntity<>(res, HttpStatus.CREATED);
-
-
     }
 
     private Authentication authenticate(String username, String password){
